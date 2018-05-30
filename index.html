@@ -33008,7 +33008,7 @@ var _user$project$Meshes$PolytopeData = function (a) {
 		};
 	};
 };
-var _user$project$Main$description = 'These are all of the uniform polytopes in four dimensions. Click one to view it. \nWhen viewing, you are in the three-dimensional surface of a four dimensional hypersphere.\nThe polytope being viewed is \"balloned out\" onto the hypersphere.\n\nYou can use WASDQE to move, and IJKLUO to turn. Use the escape key to return to this screen.\n\nWarning: For reasons I have not yet debugged, the 120 and 600-cell variants take a very long time to generate. \nThe worst is the omnitruncated 120-cell, which on my computer takes 18 minutes!\nFortunately, if you go to the select screen with escape and then back to the polytope, \nit does not have to regenerate.\n';
+var _user$project$Main$description = 'These are all of the uniform polytopes in four dimensions. Click one to view it. \nWhen viewing, you are in the three-dimensional surface of a four dimensional hypersphere.\nThe polytope being viewed is \"balloned out\" onto the hypersphere.\n\nYou can use WASDQE to move, and IJKLUO to turn. Use the escape key to return to this screen.\n\nWarning: For reasons I have not yet debugged, the 120 and 600-cell variants take a very long time to generate. \nThe worst is the omnitruncated 120-cell, which on my computer takes 18 minutes!\nFortunately, the polytope will not have to regenerate unless you reload the page.\n';
 var _user$project$Main$relevantKeys = _elm_lang$core$Set$fromList(
 	{
 		ctor: '::',
@@ -33439,149 +33439,51 @@ var _user$project$Main$view = function (model) {
 			_mdgriffith$style_elements$Element$layout,
 			_user$project$Main$styleSheet,
 			A3(
-				_mdgriffith$style_elements$Element$column,
+				_mdgriffith$style_elements$Element$el,
 				_user$project$Main$None,
 				{
 					ctor: '::',
-					_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+					_0: _mdgriffith$style_elements$Element_Attributes$center,
 					_1: {ctor: '[]'}
 				},
-				{
-					ctor: '::',
-					_0: A3(
-						_mdgriffith$style_elements$Element$textLayout,
-						_user$project$Main$Box,
-						{
+				A3(
+					_mdgriffith$style_elements$Element$column,
+					_user$project$Main$None,
+					{
+						ctor: '::',
+						_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+						_1: {
 							ctor: '::',
 							_0: _mdgriffith$style_elements$Element_Attributes$center,
-							_1: {
-								ctor: '::',
-								_0: _mdgriffith$style_elements$Element_Attributes$width(
-									_mdgriffith$style_elements$Element_Attributes$percent(50)),
-								_1: {
-									ctor: '::',
-									_0: _mdgriffith$style_elements$Element_Attributes$padding(10),
-									_1: {ctor: '[]'}
-								}
-							}
-						},
-						{
-							ctor: '::',
-							_0: _mdgriffith$style_elements$Element$text(_user$project$Main$description),
 							_1: {ctor: '[]'}
-						}),
-					_1: {
+						}
+					},
+					{
 						ctor: '::',
 						_0: A3(
-							_mdgriffith$style_elements$Element$row,
-							_user$project$Main$None,
+							_mdgriffith$style_elements$Element$textLayout,
+							_user$project$Main$Box,
 							{
 								ctor: '::',
-								_0: _mdgriffith$style_elements$Element_Attributes$center,
-								_1: {
-									ctor: '::',
-									_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
-									_1: {ctor: '[]'}
-								}
+								_0: _mdgriffith$style_elements$Element_Attributes$padding(10),
+								_1: {ctor: '[]'}
 							},
 							{
 								ctor: '::',
-								_0: A3(
-									_mdgriffith$style_elements$Element$column,
-									_user$project$Main$None,
-									{ctor: '[]'},
-									{
-										ctor: '::',
-										_0: A2(
-											_user$project$Main$button,
-											_user$project$Main$SetObject(
-												function (_) {
-													return _.regular5cell;
-												}),
-											'regular 5-cell'),
-										_1: {
-											ctor: '::',
-											_0: A2(
-												_user$project$Main$button,
-												_user$project$Main$SetObject(
-													function (_) {
-														return _.rectified5cell;
-													}),
-												'rectified 5-cell'),
-											_1: {
-												ctor: '::',
-												_0: A2(
-													_user$project$Main$button,
-													_user$project$Main$SetObject(
-														function (_) {
-															return _.truncated5cell;
-														}),
-													'truncated 5-cell'),
-												_1: {
-													ctor: '::',
-													_0: A2(
-														_user$project$Main$button,
-														_user$project$Main$SetObject(
-															function (_) {
-																return _.cantellated5cell;
-															}),
-														'cantellated 5-cell'),
-													_1: {
-														ctor: '::',
-														_0: A2(
-															_user$project$Main$button,
-															_user$project$Main$SetObject(
-																function (_) {
-																	return _.runcinated5cell;
-																}),
-															'runcinated 5-cell'),
-														_1: {
-															ctor: '::',
-															_0: A2(
-																_user$project$Main$button,
-																_user$project$Main$SetObject(
-																	function (_) {
-																		return _.bitruncated5cell;
-																	}),
-																'bitruncated 5-cell'),
-															_1: {
-																ctor: '::',
-																_0: A2(
-																	_user$project$Main$button,
-																	_user$project$Main$SetObject(
-																		function (_) {
-																			return _.cantitruncated5cell;
-																		}),
-																	'cantitruncated 5-cell'),
-																_1: {
-																	ctor: '::',
-																	_0: A2(
-																		_user$project$Main$button,
-																		_user$project$Main$SetObject(
-																			function (_) {
-																				return _.runcitruncated5cell;
-																			}),
-																		'runcitruncated 5-cell'),
-																	_1: {
-																		ctor: '::',
-																		_0: A2(
-																			_user$project$Main$button,
-																			_user$project$Main$SetObject(
-																				function (_) {
-																					return _.omnitruncated5cell;
-																				}),
-																			'omnitruncated 5-cell'),
-																		_1: {ctor: '[]'}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}),
-								_1: {
+								_0: _mdgriffith$style_elements$Element$text(_user$project$Main$description),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A3(
+								_mdgriffith$style_elements$Element$row,
+								_user$project$Main$None,
+								{
+									ctor: '::',
+									_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+									_1: {ctor: '[]'}
+								},
+								{
 									ctor: '::',
 									_0: A3(
 										_mdgriffith$style_elements$Element$column,
@@ -33589,115 +33491,89 @@ var _user$project$Main$view = function (model) {
 										{ctor: '[]'},
 										{
 											ctor: '::',
-											_0: A2(
-												_user$project$Main$button,
-												_user$project$Main$SetObject(
-													function (_) {
-														return _.regular8cell;
-													}),
-												'regular 8-cell'),
+											_0: _mdgriffith$style_elements$Element$text('1-3 seconds to generate'),
 											_1: {
 												ctor: '::',
 												_0: A2(
 													_user$project$Main$button,
 													_user$project$Main$SetObject(
 														function (_) {
-															return _.rectified8cell;
+															return _.regular5cell;
 														}),
-													'rectified 8-cell'),
+													'regular 5-cell'),
 												_1: {
 													ctor: '::',
 													_0: A2(
 														_user$project$Main$button,
 														_user$project$Main$SetObject(
 															function (_) {
-																return _.regular16cell;
+																return _.rectified5cell;
 															}),
-														'regular 16-cell'),
+														'rectified 5-cell'),
 													_1: {
 														ctor: '::',
 														_0: A2(
 															_user$project$Main$button,
 															_user$project$Main$SetObject(
 																function (_) {
-																	return _.truncated8cell;
+																	return _.truncated5cell;
 																}),
-															'truncated 8-cell'),
+															'truncated 5-cell'),
 														_1: {
 															ctor: '::',
 															_0: A2(
 																_user$project$Main$button,
 																_user$project$Main$SetObject(
 																	function (_) {
-																		return _.cantellated8cell;
+																		return _.cantellated5cell;
 																	}),
-																'cantellated 8-cell'),
+																'cantellated 5-cell'),
 															_1: {
 																ctor: '::',
 																_0: A2(
 																	_user$project$Main$button,
 																	_user$project$Main$SetObject(
 																		function (_) {
-																			return _.runcinated8cell;
+																			return _.runcinated5cell;
 																		}),
-																	'runcinated 8-cell'),
+																	'runcinated 5-cell'),
 																_1: {
 																	ctor: '::',
 																	_0: A2(
 																		_user$project$Main$button,
 																		_user$project$Main$SetObject(
 																			function (_) {
-																				return _.bitruncated8cell;
+																				return _.bitruncated5cell;
 																			}),
-																		'bitruncated 8-cell'),
+																		'bitruncated 5-cell'),
 																	_1: {
 																		ctor: '::',
 																		_0: A2(
 																			_user$project$Main$button,
 																			_user$project$Main$SetObject(
 																				function (_) {
-																					return _.truncated16cell;
+																					return _.cantitruncated5cell;
 																				}),
-																			'truncated 16-cell'),
+																			'cantitruncated 5-cell'),
 																		_1: {
 																			ctor: '::',
 																			_0: A2(
 																				_user$project$Main$button,
 																				_user$project$Main$SetObject(
 																					function (_) {
-																						return _.cantitruncated8cell;
+																						return _.runcitruncated5cell;
 																					}),
-																				'cantitruncated 8-cell'),
+																				'runcitruncated 5-cell'),
 																			_1: {
 																				ctor: '::',
 																				_0: A2(
 																					_user$project$Main$button,
 																					_user$project$Main$SetObject(
 																						function (_) {
-																							return _.runcitruncated8cell;
+																							return _.omnitruncated5cell;
 																						}),
-																					'runcitruncated 8-cell'),
-																				_1: {
-																					ctor: '::',
-																					_0: A2(
-																						_user$project$Main$button,
-																						_user$project$Main$SetObject(
-																							function (_) {
-																								return _.runcitruncated16cell;
-																							}),
-																						'runcitruncated 16-cell'),
-																					_1: {
-																						ctor: '::',
-																						_0: A2(
-																							_user$project$Main$button,
-																							_user$project$Main$SetObject(
-																								function (_) {
-																									return _.omnitruncated8cell;
-																								}),
-																							'omnitruncated 8-cell'),
-																						_1: {ctor: '[]'}
-																					}
-																				}
+																					'omnitruncated 5-cell'),
+																				_1: {ctor: '[]'}
 																			}
 																		}
 																	}
@@ -33716,250 +33592,116 @@ var _user$project$Main$view = function (model) {
 											{ctor: '[]'},
 											{
 												ctor: '::',
-												_0: A2(
-													_user$project$Main$button,
-													_user$project$Main$SetObject(
-														function (_) {
-															return _.regular24cell;
-														}),
-													'regular 24-cell'),
+												_0: _mdgriffith$style_elements$Element$text('2-6 seconds to generate'),
 												_1: {
 													ctor: '::',
 													_0: A2(
 														_user$project$Main$button,
 														_user$project$Main$SetObject(
 															function (_) {
-																return _.rectified24cell;
+																return _.regular8cell;
 															}),
-														'rectified 24-cell'),
+														'regular 8-cell'),
 													_1: {
 														ctor: '::',
 														_0: A2(
 															_user$project$Main$button,
 															_user$project$Main$SetObject(
 																function (_) {
-																	return _.truncated24cell;
+																	return _.rectified8cell;
 																}),
-															'truncated 24-cell'),
+															'rectified 8-cell'),
 														_1: {
 															ctor: '::',
 															_0: A2(
 																_user$project$Main$button,
 																_user$project$Main$SetObject(
 																	function (_) {
-																		return _.cantellated24cell;
+																		return _.regular16cell;
 																	}),
-																'cantellated 24-cell'),
+																'regular 16-cell'),
 															_1: {
 																ctor: '::',
 																_0: A2(
 																	_user$project$Main$button,
 																	_user$project$Main$SetObject(
 																		function (_) {
-																			return _.runcinated24cell;
+																			return _.truncated8cell;
 																		}),
-																	'runcinated 24-cell'),
+																	'truncated 8-cell'),
 																_1: {
 																	ctor: '::',
 																	_0: A2(
 																		_user$project$Main$button,
 																		_user$project$Main$SetObject(
 																			function (_) {
-																				return _.bitruncated24cell;
+																				return _.cantellated8cell;
 																			}),
-																		'bitruncated 24-cell'),
+																		'cantellated 8-cell'),
 																	_1: {
 																		ctor: '::',
 																		_0: A2(
 																			_user$project$Main$button,
 																			_user$project$Main$SetObject(
 																				function (_) {
-																					return _.cantitruncated24cell;
+																					return _.runcinated8cell;
 																				}),
-																			'cantitruncated 24-cell'),
+																			'runcinated 8-cell'),
 																		_1: {
 																			ctor: '::',
 																			_0: A2(
 																				_user$project$Main$button,
 																				_user$project$Main$SetObject(
 																					function (_) {
-																						return _.runcitruncated24cell;
+																						return _.bitruncated8cell;
 																					}),
-																				'runcitruncated 24-cell'),
+																				'bitruncated 8-cell'),
 																			_1: {
 																				ctor: '::',
 																				_0: A2(
 																					_user$project$Main$button,
 																					_user$project$Main$SetObject(
 																						function (_) {
-																							return _.omnitruncated24cell;
+																							return _.truncated16cell;
 																						}),
-																					'omnitruncated 24-cell'),
+																					'truncated 16-cell'),
 																				_1: {
 																					ctor: '::',
 																					_0: A2(
 																						_user$project$Main$button,
 																						_user$project$Main$SetObject(
 																							function (_) {
-																								return _.snub24cell;
+																								return _.cantitruncated8cell;
 																							}),
-																						'snub 24-cell'),
-																					_1: {ctor: '[]'}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}),
-										_1: {
-											ctor: '::',
-											_0: A3(
-												_mdgriffith$style_elements$Element$column,
-												_user$project$Main$None,
-												{ctor: '[]'},
-												{
-													ctor: '::',
-													_0: A2(
-														_user$project$Main$button,
-														_user$project$Main$SetObject(
-															function (_) {
-																return _.regular120cell;
-															}),
-														'regular 120-cell'),
-													_1: {
-														ctor: '::',
-														_0: A2(
-															_user$project$Main$button,
-															_user$project$Main$SetObject(
-																function (_) {
-																	return _.rectified120cell;
-																}),
-															'rectified 120-cell'),
-														_1: {
-															ctor: '::',
-															_0: A2(
-																_user$project$Main$button,
-																_user$project$Main$SetObject(
-																	function (_) {
-																		return _.rectified600cell;
-																	}),
-																'rectified 600-cell'),
-															_1: {
-																ctor: '::',
-																_0: A2(
-																	_user$project$Main$button,
-																	_user$project$Main$SetObject(
-																		function (_) {
-																			return _.regular600cell;
-																		}),
-																	'regular 600-cell'),
-																_1: {
-																	ctor: '::',
-																	_0: A2(
-																		_user$project$Main$button,
-																		_user$project$Main$SetObject(
-																			function (_) {
-																				return _.truncated120cell;
-																			}),
-																		'truncated 120-cell'),
-																	_1: {
-																		ctor: '::',
-																		_0: A2(
-																			_user$project$Main$button,
-																			_user$project$Main$SetObject(
-																				function (_) {
-																					return _.cantellated120cell;
-																				}),
-																			'cantellated 120-cell'),
-																		_1: {
-																			ctor: '::',
-																			_0: A2(
-																				_user$project$Main$button,
-																				_user$project$Main$SetObject(
-																					function (_) {
-																						return _.runcinated120cell;
-																					}),
-																				'runcinated 120-cell'),
-																			_1: {
-																				ctor: '::',
-																				_0: A2(
-																					_user$project$Main$button,
-																					_user$project$Main$SetObject(
-																						function (_) {
-																							return _.bitruncated120cell;
-																						}),
-																					'bitruncated 120-cell'),
-																				_1: {
-																					ctor: '::',
-																					_0: A2(
-																						_user$project$Main$button,
-																						_user$project$Main$SetObject(
-																							function (_) {
-																								return _.cantellated600cell;
-																							}),
-																						'cantellated 600-cell'),
+																						'cantitruncated 8-cell'),
 																					_1: {
 																						ctor: '::',
 																						_0: A2(
 																							_user$project$Main$button,
 																							_user$project$Main$SetObject(
 																								function (_) {
-																									return _.truncated600cell;
+																									return _.runcitruncated8cell;
 																								}),
-																							'truncated 600-cell'),
+																							'runcitruncated 8-cell'),
 																						_1: {
 																							ctor: '::',
 																							_0: A2(
 																								_user$project$Main$button,
 																								_user$project$Main$SetObject(
 																									function (_) {
-																										return _.cantitruncated120cell;
+																										return _.runcitruncated16cell;
 																									}),
-																								'cantitruncated 120-cell'),
+																								'runcitruncated 16-cell'),
 																							_1: {
 																								ctor: '::',
 																								_0: A2(
 																									_user$project$Main$button,
 																									_user$project$Main$SetObject(
 																										function (_) {
-																											return _.runcitruncated120cell;
+																											return _.omnitruncated8cell;
 																										}),
-																									'runcitruncated 120-cell'),
-																								_1: {
-																									ctor: '::',
-																									_0: A2(
-																										_user$project$Main$button,
-																										_user$project$Main$SetObject(
-																											function (_) {
-																												return _.runcitruncated600cell;
-																											}),
-																										'runcitruncated 600-cell'),
-																									_1: {
-																										ctor: '::',
-																										_0: A2(
-																											_user$project$Main$button,
-																											_user$project$Main$SetObject(
-																												function (_) {
-																													return _.cantitruncated600cell;
-																												}),
-																											'cantitruncated 600-cell'),
-																										_1: {
-																											ctor: '::',
-																											_0: A2(
-																												_user$project$Main$button,
-																												_user$project$Main$SetObject(
-																													function (_) {
-																														return _.omnitruncated120cell;
-																													}),
-																												'omnitruncated 120-cell'),
-																											_1: {ctor: '[]'}
-																										}
-																									}
-																								}
+																									'omnitruncated 8-cell'),
+																								_1: {ctor: '[]'}
 																							}
 																						}
 																					}
@@ -33971,72 +33713,6 @@ var _user$project$Main$view = function (model) {
 															}
 														}
 													}
-												}),
-											_1: {ctor: '[]'}
-										}
-									}
-								}
-							}),
-						_1: {
-							ctor: '::',
-							_0: A3(
-								_mdgriffith$style_elements$Element$column,
-								_user$project$Main$None,
-								{
-									ctor: '::',
-									_0: _mdgriffith$style_elements$Element_Attributes$center,
-									_1: {ctor: '[]'}
-								},
-								{
-									ctor: '::',
-									_0: A2(
-										_user$project$Main$button,
-										_user$project$Main$SetObject(
-											function (_) {
-												return _.grandAntiprism;
-											}),
-										'grand antiprism'),
-									_1: {ctor: '[]'}
-								}),
-							_1: {
-								ctor: '::',
-								_0: A3(
-									_mdgriffith$style_elements$Element$row,
-									_user$project$Main$None,
-									{
-										ctor: '::',
-										_0: _mdgriffith$style_elements$Element_Attributes$center,
-										_1: {
-											ctor: '::',
-											_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
-											_1: {ctor: '[]'}
-										}
-									},
-									{
-										ctor: '::',
-										_0: A3(
-											_mdgriffith$style_elements$Element$column,
-											_user$project$Main$None,
-											{ctor: '[]'},
-											{
-												ctor: '::',
-												_0: A2(
-													_user$project$Main$button,
-													_user$project$Main$SetObject(
-														function (_) {
-															return _.tetrahedralPrism;
-														}),
-													'tetrahedral prism'),
-												_1: {
-													ctor: '::',
-													_0: A2(
-														_user$project$Main$button,
-														_user$project$Main$SetObject(
-															function (_) {
-																return _.truncatedTetrahedralPrism;
-															}),
-														'truncated tetrahedral prism'),
-													_1: {ctor: '[]'}
 												}
 											}),
 										_1: {
@@ -34047,77 +33723,101 @@ var _user$project$Main$view = function (model) {
 												{ctor: '[]'},
 												{
 													ctor: '::',
-													_0: A2(
-														_user$project$Main$button,
-														_user$project$Main$SetObject(
-															function (_) {
-																return _.regular8cell;
-															}),
-														'cubical prism'),
+													_0: _mdgriffith$style_elements$Element$text('3-15 seconds to generate'),
 													_1: {
 														ctor: '::',
 														_0: A2(
 															_user$project$Main$button,
 															_user$project$Main$SetObject(
 																function (_) {
-																	return _.cubeoctahedralPrism;
+																	return _.regular24cell;
 																}),
-															'cubeoctahedral prism'),
+															'regular 24-cell'),
 														_1: {
 															ctor: '::',
 															_0: A2(
 																_user$project$Main$button,
 																_user$project$Main$SetObject(
 																	function (_) {
-																		return _.octahedralPrism;
+																		return _.rectified24cell;
 																	}),
-																'octahedral prism'),
+																'rectified 24-cell'),
 															_1: {
 																ctor: '::',
 																_0: A2(
 																	_user$project$Main$button,
 																	_user$project$Main$SetObject(
 																		function (_) {
-																			return _.rhombicubeoctahedralPrism;
+																			return _.truncated24cell;
 																		}),
-																	'rhombicubeoctahedral prism'),
+																	'truncated 24-cell'),
 																_1: {
 																	ctor: '::',
 																	_0: A2(
 																		_user$project$Main$button,
 																		_user$project$Main$SetObject(
 																			function (_) {
-																				return _.truncatedCubicPrism;
+																				return _.cantellated24cell;
 																			}),
-																		'truncated cubic prism'),
+																		'cantellated 24-cell'),
 																	_1: {
 																		ctor: '::',
 																		_0: A2(
 																			_user$project$Main$button,
 																			_user$project$Main$SetObject(
 																				function (_) {
-																					return _.truncatedOctahedralPrism;
+																					return _.runcinated24cell;
 																				}),
-																			'truncated octahedral prism'),
+																			'runcinated 24-cell'),
 																		_1: {
 																			ctor: '::',
 																			_0: A2(
 																				_user$project$Main$button,
 																				_user$project$Main$SetObject(
 																					function (_) {
-																						return _.truncatedCubeoctahedralPrism;
+																						return _.bitruncated24cell;
 																					}),
-																				'truncated cubeoctahedral prism'),
+																				'bitruncated 24-cell'),
 																			_1: {
 																				ctor: '::',
 																				_0: A2(
 																					_user$project$Main$button,
 																					_user$project$Main$SetObject(
 																						function (_) {
-																							return _.snubCubicPrism;
+																							return _.cantitruncated24cell;
 																						}),
-																					'snub cubic prism'),
-																				_1: {ctor: '[]'}
+																					'cantitruncated 24-cell'),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$Main$button,
+																						_user$project$Main$SetObject(
+																							function (_) {
+																								return _.runcitruncated24cell;
+																							}),
+																						'runcitruncated 24-cell'),
+																					_1: {
+																						ctor: '::',
+																						_0: A2(
+																							_user$project$Main$button,
+																							_user$project$Main$SetObject(
+																								function (_) {
+																									return _.omnitruncated24cell;
+																								}),
+																							'omnitruncated 24-cell'),
+																						_1: {
+																							ctor: '::',
+																							_0: A2(
+																								_user$project$Main$button,
+																								_user$project$Main$SetObject(
+																									function (_) {
+																										return _.snub24cell;
+																									}),
+																								'snub 24-cell'),
+																							_1: {ctor: '[]'}
+																						}
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -34134,77 +33834,151 @@ var _user$project$Main$view = function (model) {
 													{ctor: '[]'},
 													{
 														ctor: '::',
-														_0: A2(
-															_user$project$Main$button,
-															_user$project$Main$SetObject(
-																function (_) {
-																	return _.dodecahedralPrism;
-																}),
-															'dodecahedral prism'),
+														_0: _mdgriffith$style_elements$Element$text('18-1000+ seconds to generate :('),
 														_1: {
 															ctor: '::',
 															_0: A2(
 																_user$project$Main$button,
 																_user$project$Main$SetObject(
 																	function (_) {
-																		return _.icosidodecahedralPrism;
+																		return _.regular120cell;
 																	}),
-																'icosidodecahedral prism'),
+																'regular 120-cell'),
 															_1: {
 																ctor: '::',
 																_0: A2(
 																	_user$project$Main$button,
 																	_user$project$Main$SetObject(
 																		function (_) {
-																			return _.icosahedralPrism;
+																			return _.rectified120cell;
 																		}),
-																	'icosahedral prism'),
+																	'rectified 120-cell'),
 																_1: {
 																	ctor: '::',
 																	_0: A2(
 																		_user$project$Main$button,
 																		_user$project$Main$SetObject(
 																			function (_) {
-																				return _.truncatedDodecahedralPrism;
+																				return _.rectified600cell;
 																			}),
-																		'truncated dodecahedral prism'),
+																		'rectified 600-cell'),
 																	_1: {
 																		ctor: '::',
 																		_0: A2(
 																			_user$project$Main$button,
 																			_user$project$Main$SetObject(
 																				function (_) {
-																					return _.rhombicosidodecahedralPrism;
+																					return _.regular600cell;
 																				}),
-																			'rhombicosidodecahedral prism'),
+																			'regular 600-cell'),
 																		_1: {
 																			ctor: '::',
 																			_0: A2(
 																				_user$project$Main$button,
 																				_user$project$Main$SetObject(
 																					function (_) {
-																						return _.truncatedIcosahedralPrism;
+																						return _.truncated120cell;
 																					}),
-																				'truncated icosahedral prism'),
+																				'truncated 120-cell'),
 																			_1: {
 																				ctor: '::',
 																				_0: A2(
 																					_user$project$Main$button,
 																					_user$project$Main$SetObject(
 																						function (_) {
-																							return _.truncatedIcosidodecahedralPrism;
+																							return _.cantellated120cell;
 																						}),
-																					'truncated icosidodecahedral prism'),
+																					'cantellated 120-cell'),
 																				_1: {
 																					ctor: '::',
 																					_0: A2(
 																						_user$project$Main$button,
 																						_user$project$Main$SetObject(
 																							function (_) {
-																								return _.snubDodecahedralPrism;
+																								return _.runcinated120cell;
 																							}),
-																						'snub dodecahedral prism'),
-																					_1: {ctor: '[]'}
+																						'runcinated 120-cell'),
+																					_1: {
+																						ctor: '::',
+																						_0: A2(
+																							_user$project$Main$button,
+																							_user$project$Main$SetObject(
+																								function (_) {
+																									return _.bitruncated120cell;
+																								}),
+																							'bitruncated 120-cell'),
+																						_1: {
+																							ctor: '::',
+																							_0: A2(
+																								_user$project$Main$button,
+																								_user$project$Main$SetObject(
+																									function (_) {
+																										return _.cantellated600cell;
+																									}),
+																								'cantellated 600-cell'),
+																							_1: {
+																								ctor: '::',
+																								_0: A2(
+																									_user$project$Main$button,
+																									_user$project$Main$SetObject(
+																										function (_) {
+																											return _.truncated600cell;
+																										}),
+																									'truncated 600-cell'),
+																								_1: {
+																									ctor: '::',
+																									_0: A2(
+																										_user$project$Main$button,
+																										_user$project$Main$SetObject(
+																											function (_) {
+																												return _.cantitruncated120cell;
+																											}),
+																										'cantitruncated 120-cell'),
+																									_1: {
+																										ctor: '::',
+																										_0: A2(
+																											_user$project$Main$button,
+																											_user$project$Main$SetObject(
+																												function (_) {
+																													return _.runcitruncated120cell;
+																												}),
+																											'runcitruncated 120-cell'),
+																										_1: {
+																											ctor: '::',
+																											_0: A2(
+																												_user$project$Main$button,
+																												_user$project$Main$SetObject(
+																													function (_) {
+																														return _.runcitruncated600cell;
+																													}),
+																												'runcitruncated 600-cell'),
+																											_1: {
+																												ctor: '::',
+																												_0: A2(
+																													_user$project$Main$button,
+																													_user$project$Main$SetObject(
+																														function (_) {
+																															return _.cantitruncated600cell;
+																														}),
+																													'cantitruncated 600-cell'),
+																												_1: {
+																													ctor: '::',
+																													_0: A2(
+																														_user$project$Main$button,
+																														_user$project$Main$SetObject(
+																															function (_) {
+																																return _.omnitruncated120cell;
+																															}),
+																														'omnitruncated 120-cell'),
+																													_1: {ctor: '[]'}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
 																				}
 																			}
 																		}
@@ -34216,106 +33990,246 @@ var _user$project$Main$view = function (model) {
 												_1: {ctor: '[]'}
 											}
 										}
-									}),
+									}
+								}),
+							_1: {
+								ctor: '::',
+								_0: _mdgriffith$style_elements$Element$spacer(1),
 								_1: {
 									ctor: '::',
-									_0: A3(
-										_mdgriffith$style_elements$Element$row,
-										_user$project$Main$None,
-										{
-											ctor: '::',
-											_0: _mdgriffith$style_elements$Element_Attributes$center,
-											_1: {
-												ctor: '::',
-												_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
-												_1: {ctor: '[]'}
-											}
-										},
-										{
-											ctor: '::',
-											_0: function () {
-												var _p7 = _elm_lang$core$String$toInt(model.inputAntiprismPrism);
-												if (_p7.ctor === 'Ok') {
-													var _p9 = _p7._0;
-													return (_elm_lang$core$Native_Utils.cmp(_p9, 3) > -1) ? A2(
-														_user$project$Main$button,
-														_user$project$Main$SetObject(
-															function (_p8) {
-																return A2(
-																	_user$project$InfiniteList$get,
-																	_p9 - 3,
-																	function (_) {
-																		return _.antiprismPrism;
-																	}(_p8));
-															}),
-														'antiprism prism') : _mdgriffith$style_elements$Element$empty;
-												} else {
-													return _mdgriffith$style_elements$Element$empty;
-												}
-											}(),
-											_1: {
-												ctor: '::',
-												_0: A2(_user$project$Main$input, _user$project$Main$InputAntiprismPrism, model.inputAntiprismPrism),
-												_1: {ctor: '[]'}
-											}
-										}),
+									_0: _mdgriffith$style_elements$Element$text('These take a couple of seconds to generate.'),
 									_1: {
 										ctor: '::',
 										_0: A3(
-											_mdgriffith$style_elements$Element$row,
+											_mdgriffith$style_elements$Element$column,
 											_user$project$Main$None,
+											{ctor: '[]'},
 											{
 												ctor: '::',
-												_0: _mdgriffith$style_elements$Element_Attributes$center,
-												_1: {
-													ctor: '::',
-													_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
-													_1: {ctor: '[]'}
-												}
-											},
-											{
-												ctor: '::',
-												_0: function () {
-													var _p10 = {
-														ctor: '_Tuple2',
-														_0: _elm_lang$core$String$toInt(model.inputDuoprism1),
-														_1: _elm_lang$core$String$toInt(model.inputDuoprism2)
-													};
-													if (((_p10.ctor === '_Tuple2') && (_p10._0.ctor === 'Ok')) && (_p10._1.ctor === 'Ok')) {
-														var _p13 = _p10._1._0;
-														var _p12 = _p10._0._0;
-														return ((_elm_lang$core$Native_Utils.cmp(_p12, 3) > -1) && (_elm_lang$core$Native_Utils.cmp(_p13, 3) > -1)) ? A2(
-															_user$project$Main$button,
-															_user$project$Main$SetObject(
-																function (_p11) {
-																	return A2(
-																		_user$project$InfiniteList$get,
-																		_p13 - 3,
-																		A2(
-																			_user$project$InfiniteList$get,
-																			_p12 - 3,
-																			function (_) {
-																				return _.duoprism;
-																			}(_p11)));
-																}),
-															'duoprism') : _mdgriffith$style_elements$Element$empty;
-													} else {
-														return _mdgriffith$style_elements$Element$empty;
-													}
-												}(),
-												_1: {
-													ctor: '::',
-													_0: A2(_user$project$Main$input, _user$project$Main$InputDuoprism1, model.inputDuoprism1),
-													_1: {
-														ctor: '::',
-														_0: A2(_user$project$Main$input, _user$project$Main$InputDuoprism2, model.inputDuoprism2),
-														_1: {ctor: '[]'}
-													}
-												}
+												_0: A2(
+													_user$project$Main$button,
+													_user$project$Main$SetObject(
+														function (_) {
+															return _.grandAntiprism;
+														}),
+													'grand antiprism'),
+												_1: {ctor: '[]'}
 											}),
 										_1: {
 											ctor: '::',
-											_0: _mdgriffith$style_elements$Element$spacer(1),
+											_0: A3(
+												_mdgriffith$style_elements$Element$row,
+												_user$project$Main$None,
+												{
+													ctor: '::',
+													_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+													_1: {ctor: '[]'}
+												},
+												{
+													ctor: '::',
+													_0: A3(
+														_mdgriffith$style_elements$Element$column,
+														_user$project$Main$None,
+														{ctor: '[]'},
+														{
+															ctor: '::',
+															_0: A2(
+																_user$project$Main$button,
+																_user$project$Main$SetObject(
+																	function (_) {
+																		return _.tetrahedralPrism;
+																	}),
+																'tetrahedral prism'),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$Main$button,
+																	_user$project$Main$SetObject(
+																		function (_) {
+																			return _.truncatedTetrahedralPrism;
+																		}),
+																	'truncated tetrahedral prism'),
+																_1: {ctor: '[]'}
+															}
+														}),
+													_1: {
+														ctor: '::',
+														_0: A3(
+															_mdgriffith$style_elements$Element$column,
+															_user$project$Main$None,
+															{ctor: '[]'},
+															{
+																ctor: '::',
+																_0: A2(
+																	_user$project$Main$button,
+																	_user$project$Main$SetObject(
+																		function (_) {
+																			return _.regular8cell;
+																		}),
+																	'cubical prism'),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$Main$button,
+																		_user$project$Main$SetObject(
+																			function (_) {
+																				return _.cubeoctahedralPrism;
+																			}),
+																		'cubeoctahedral prism'),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$Main$button,
+																			_user$project$Main$SetObject(
+																				function (_) {
+																					return _.octahedralPrism;
+																				}),
+																			'octahedral prism'),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$Main$button,
+																				_user$project$Main$SetObject(
+																					function (_) {
+																						return _.rhombicubeoctahedralPrism;
+																					}),
+																				'rhombicubeoctahedral prism'),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$Main$button,
+																					_user$project$Main$SetObject(
+																						function (_) {
+																							return _.truncatedCubicPrism;
+																						}),
+																					'truncated cubic prism'),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$Main$button,
+																						_user$project$Main$SetObject(
+																							function (_) {
+																								return _.truncatedOctahedralPrism;
+																							}),
+																						'truncated octahedral prism'),
+																					_1: {
+																						ctor: '::',
+																						_0: A2(
+																							_user$project$Main$button,
+																							_user$project$Main$SetObject(
+																								function (_) {
+																									return _.truncatedCubeoctahedralPrism;
+																								}),
+																							'truncated cubeoctahedral prism'),
+																						_1: {
+																							ctor: '::',
+																							_0: A2(
+																								_user$project$Main$button,
+																								_user$project$Main$SetObject(
+																									function (_) {
+																										return _.snubCubicPrism;
+																									}),
+																								'snub cubic prism'),
+																							_1: {ctor: '[]'}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}),
+														_1: {
+															ctor: '::',
+															_0: A3(
+																_mdgriffith$style_elements$Element$column,
+																_user$project$Main$None,
+																{ctor: '[]'},
+																{
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$Main$button,
+																		_user$project$Main$SetObject(
+																			function (_) {
+																				return _.dodecahedralPrism;
+																			}),
+																		'dodecahedral prism'),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$Main$button,
+																			_user$project$Main$SetObject(
+																				function (_) {
+																					return _.icosidodecahedralPrism;
+																				}),
+																			'icosidodecahedral prism'),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$Main$button,
+																				_user$project$Main$SetObject(
+																					function (_) {
+																						return _.icosahedralPrism;
+																					}),
+																				'icosahedral prism'),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$Main$button,
+																					_user$project$Main$SetObject(
+																						function (_) {
+																							return _.truncatedDodecahedralPrism;
+																						}),
+																					'truncated dodecahedral prism'),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$Main$button,
+																						_user$project$Main$SetObject(
+																							function (_) {
+																								return _.rhombicosidodecahedralPrism;
+																							}),
+																						'rhombicosidodecahedral prism'),
+																					_1: {
+																						ctor: '::',
+																						_0: A2(
+																							_user$project$Main$button,
+																							_user$project$Main$SetObject(
+																								function (_) {
+																									return _.truncatedIcosahedralPrism;
+																								}),
+																							'truncated icosahedral prism'),
+																						_1: {
+																							ctor: '::',
+																							_0: A2(
+																								_user$project$Main$button,
+																								_user$project$Main$SetObject(
+																									function (_) {
+																										return _.truncatedIcosidodecahedralPrism;
+																									}),
+																								'truncated icosidodecahedral prism'),
+																							_1: {
+																								ctor: '::',
+																								_0: A2(
+																									_user$project$Main$button,
+																									_user$project$Main$SetObject(
+																										function (_) {
+																											return _.snubDodecahedralPrism;
+																										}),
+																									'snub dodecahedral prism'),
+																								_1: {ctor: '[]'}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}),
+															_1: {ctor: '[]'}
+														}
+													}
+												}),
 											_1: {
 												ctor: '::',
 												_0: A3(
@@ -34323,22 +34237,34 @@ var _user$project$Main$view = function (model) {
 													_user$project$Main$None,
 													{
 														ctor: '::',
-														_0: _mdgriffith$style_elements$Element_Attributes$center,
-														_1: {
-															ctor: '::',
-															_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
-															_1: {ctor: '[]'}
-														}
+														_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+														_1: {ctor: '[]'}
 													},
 													{
 														ctor: '::',
-														_0: _mdgriffith$style_elements$Element$text('FOV'),
+														_0: function () {
+															var _p7 = _elm_lang$core$String$toInt(model.inputAntiprismPrism);
+															if (_p7.ctor === 'Ok') {
+																var _p9 = _p7._0;
+																return (_elm_lang$core$Native_Utils.cmp(_p9, 3) > -1) ? A2(
+																	_user$project$Main$button,
+																	_user$project$Main$SetObject(
+																		function (_p8) {
+																			return A2(
+																				_user$project$InfiniteList$get,
+																				_p9 - 3,
+																				function (_) {
+																					return _.antiprismPrism;
+																				}(_p8));
+																		}),
+																	'antiprism prism') : _mdgriffith$style_elements$Element$empty;
+															} else {
+																return _mdgriffith$style_elements$Element$empty;
+															}
+														}(),
 														_1: {
 															ctor: '::',
-															_0: A2(
-																_user$project$Main$input,
-																_user$project$Main$SetFov,
-																_elm_lang$core$Basics$toString(model.fov)),
+															_0: A2(_user$project$Main$input, _user$project$Main$InputAntiprismPrism, model.inputAntiprismPrism),
 															_1: {ctor: '[]'}
 														}
 													}),
@@ -34349,26 +34275,100 @@ var _user$project$Main$view = function (model) {
 														_user$project$Main$None,
 														{
 															ctor: '::',
-															_0: _mdgriffith$style_elements$Element_Attributes$center,
-															_1: {
-																ctor: '::',
-																_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
-																_1: {ctor: '[]'}
-															}
+															_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+															_1: {ctor: '[]'}
 														},
 														{
 															ctor: '::',
-															_0: _mdgriffith$style_elements$Element$text('Speed'),
+															_0: function () {
+																var _p10 = {
+																	ctor: '_Tuple2',
+																	_0: _elm_lang$core$String$toInt(model.inputDuoprism1),
+																	_1: _elm_lang$core$String$toInt(model.inputDuoprism2)
+																};
+																if (((_p10.ctor === '_Tuple2') && (_p10._0.ctor === 'Ok')) && (_p10._1.ctor === 'Ok')) {
+																	var _p13 = _p10._1._0;
+																	var _p12 = _p10._0._0;
+																	return ((_elm_lang$core$Native_Utils.cmp(_p12, 3) > -1) && (_elm_lang$core$Native_Utils.cmp(_p13, 3) > -1)) ? A2(
+																		_user$project$Main$button,
+																		_user$project$Main$SetObject(
+																			function (_p11) {
+																				return A2(
+																					_user$project$InfiniteList$get,
+																					_p13 - 3,
+																					A2(
+																						_user$project$InfiniteList$get,
+																						_p12 - 3,
+																						function (_) {
+																							return _.duoprism;
+																						}(_p11)));
+																			}),
+																		'duoprism') : _mdgriffith$style_elements$Element$empty;
+																} else {
+																	return _mdgriffith$style_elements$Element$empty;
+																}
+															}(),
 															_1: {
 																ctor: '::',
-																_0: A2(
-																	_user$project$Main$input,
-																	_user$project$Main$SetSpeed,
-																	_elm_lang$core$Basics$toString(model.speed)),
-																_1: {ctor: '[]'}
+																_0: A2(_user$project$Main$input, _user$project$Main$InputDuoprism1, model.inputDuoprism1),
+																_1: {
+																	ctor: '::',
+																	_0: A2(_user$project$Main$input, _user$project$Main$InputDuoprism2, model.inputDuoprism2),
+																	_1: {ctor: '[]'}
+																}
 															}
 														}),
-													_1: {ctor: '[]'}
+													_1: {
+														ctor: '::',
+														_0: _mdgriffith$style_elements$Element$spacer(2),
+														_1: {
+															ctor: '::',
+															_0: A3(
+																_mdgriffith$style_elements$Element$row,
+																_user$project$Main$None,
+																{
+																	ctor: '::',
+																	_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+																	_1: {ctor: '[]'}
+																},
+																{
+																	ctor: '::',
+																	_0: _mdgriffith$style_elements$Element$text('FOV'),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$Main$input,
+																			_user$project$Main$SetFov,
+																			_elm_lang$core$Basics$toString(model.fov)),
+																		_1: {ctor: '[]'}
+																	}
+																}),
+															_1: {
+																ctor: '::',
+																_0: A3(
+																	_mdgriffith$style_elements$Element$row,
+																	_user$project$Main$None,
+																	{
+																		ctor: '::',
+																		_0: _mdgriffith$style_elements$Element_Attributes$spacing(10),
+																		_1: {ctor: '[]'}
+																	},
+																	{
+																		ctor: '::',
+																		_0: _mdgriffith$style_elements$Element$text('Speed'),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$Main$input,
+																				_user$project$Main$SetSpeed,
+																				_elm_lang$core$Basics$toString(model.speed)),
+																			_1: {ctor: '[]'}
+																		}
+																	}),
+																_1: {ctor: '[]'}
+															}
+														}
+													}
 												}
 											}
 										}
@@ -34376,8 +34376,7 @@ var _user$project$Main$view = function (model) {
 								}
 							}
 						}
-					}
-				}));
+					})));
 	}
 };
 var _user$project$Main$main = _elm_lang$html$Html$program(
